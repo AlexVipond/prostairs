@@ -18,5 +18,9 @@
         "tailwindcss": "^0.6.5",
         "webpack-watch": "^0.2.0",
         "yargs": "^4.6.0"
+    },
+    "dependencies": {
+        "laravel-mix-purgecss": "^2.2.3",
+        "typeface-titillium-web": "0.0.54"
     }
 }
