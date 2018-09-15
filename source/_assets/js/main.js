@@ -12,15 +12,34 @@ import SecondaryCallToAction from './components/SecondaryCallToAction.vue'
 let app = new Vue({
   el: "#app",
   data: {
-    language: 'en',
-    en: {
-
-    },
-    es: {
-
-    },
-    pt: {
-
+    currentLanguage: 'pt',
+    languages: [
+      {
+        code: 'en',
+        name: 'English'
+      },
+      {
+        code: 'es',
+        name: 'Español'
+      },
+      {
+        code: 'pt',
+        name: 'Português'
+      }
+    ],
+    messages: {
+      en: {
+        primary_call_to_action: 'Contact Prostairs',
+        secondary_call_to_action: 'See our work'
+      },
+      es: {
+        primary_call_to_action: 'Contactar Prostairs',
+        secondary_call_to_action: 'Ver nuestras obras'
+      },
+      pt: {
+        primary_call_to_action: 'Contactar Prostairs',
+        secondary_call_to_action: 'Ver nossos trabalhos'
+      }
     }
   },
   methods: {
