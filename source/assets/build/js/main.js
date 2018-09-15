@@ -17972,32 +17972,34 @@ module.exports = Component.exports
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__("./node_modules/vue/dist/vue.common.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_ValueProposition_vue__ = __webpack_require__("./source/_assets/js/components/ValueProposition.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_ValueProposition_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_ValueProposition_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_PrimaryCallToAction_vue__ = __webpack_require__("./source/_assets/js/components/PrimaryCallToAction.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_PrimaryCallToAction_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_PrimaryCallToAction_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_SecondaryCallToAction_vue__ = __webpack_require__("./source/_assets/js/components/SecondaryCallToAction.vue");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_SecondaryCallToAction_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_SecondaryCallToAction_vue__);
-
-
-// import Velocity from 'velocity-animate';
-
-
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_velocity_animate__ = __webpack_require__("./node_modules/velocity-animate/velocity.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_velocity_animate___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_velocity_animate__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_ValueProposition_vue__ = __webpack_require__("./source/_assets/js/components/ValueProposition.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_ValueProposition_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_ValueProposition_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_PrimaryCallToAction_vue__ = __webpack_require__("./source/_assets/js/components/PrimaryCallToAction.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_PrimaryCallToAction_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_PrimaryCallToAction_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_SecondaryCallToAction_vue__ = __webpack_require__("./source/_assets/js/components/SecondaryCallToAction.vue");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_SecondaryCallToAction_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_SecondaryCallToAction_vue__);
 
 
 var PortalVue = __webpack_require__("./node_modules/portal-vue/dist/portal-vue.js");
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(PortalVue);
 
+
+
+
+
+
+
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
   el: "#app",
   data: {
-    languageCode: 'en'
+    language: 'en'
   },
   components: {
-    ValueProposition: __WEBPACK_IMPORTED_MODULE_1__components_ValueProposition_vue___default.a,
-    PrimaryCallToAction: __WEBPACK_IMPORTED_MODULE_2__components_PrimaryCallToAction_vue___default.a,
-    SecondaryCallToAction: __WEBPACK_IMPORTED_MODULE_3__components_SecondaryCallToAction_vue___default.a
+    ValueProposition: __WEBPACK_IMPORTED_MODULE_2__components_ValueProposition_vue___default.a,
+    PrimaryCallToAction: __WEBPACK_IMPORTED_MODULE_3__components_PrimaryCallToAction_vue___default.a,
+    SecondaryCallToAction: __WEBPACK_IMPORTED_MODULE_4__components_SecondaryCallToAction_vue___default.a
   }
 });
 
