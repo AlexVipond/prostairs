@@ -17994,7 +17994,15 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(PortalVue);
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
   el: "#app",
   data: {
-    language: 'en'
+    language: 'en',
+    en: {},
+    es: {},
+    pt: {}
+  },
+  methods: {
+    setLanguage: function setLanguage() {
+      console.log(this.language);
+    }
   },
   components: {
     ValueProposition: __WEBPACK_IMPORTED_MODULE_2__components_ValueProposition_vue___default.a,

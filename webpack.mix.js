@@ -20,7 +20,14 @@ mix.webpackConfig({
   plugins: [
     build.jigsaw,
     // build.browserSync(),
-    build.watch(['source/**/*.md', 'source/**/*.php', 'source/**/*.vue', 'source/**/*.css', '!source/**/_tmp/*']),
+    build.watch([
+      'source/**/*.md',
+      'source/**/*.php',
+      '!source/**/_tmp/*',
+      'source/_assets/*.css',
+      'source/_assets/*.js',
+      'source/_assets/*.vue'
+    ]),
   ]
 });
 

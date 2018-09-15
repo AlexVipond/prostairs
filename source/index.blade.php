@@ -3,7 +3,7 @@
 @section('body')
 <div id="app">
   <header id="landing-page" class="flex relative h-screen min-h-400 flex items-center bg-blue-darker bg-center bg-no-repeat bg-fixed bg-cover">
-    <div class="absolute z-10 pin-t pin-l w-full h-full bg-true-black-20"></div>
+    <!-- <div class="absolute z-10 pin-t pin-l w-full h-full bg-true-black-20"></div> -->
 
     <div class="relative z-20 container mx-auto px-8 py-16">
       <div class="">
