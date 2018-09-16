@@ -1,14 +1,14 @@
 <template>
   <div class="">
     <div class="font-bold text-xl md:text-2xl text-blue-lighter text-shadow">
-      <h3 class="mb-2">{{ messages[currentLanguage].value_secondary }}.</h3>
-      <h3>{{ messages[currentLanguage].value_tertiary }}.</h3>
+      <h3 class="mb-2">{{ messages[language].value_secondary }}.</h3>
+      <h3>{{ messages[language].value_tertiary }}.</h3>
     </div>
 
-    <h2 class="mt-4 mb-12 font-bold text-5xl md:text-6xl leading-none text-blue-lightest text-shadow">{{ messages[currentLanguage].value_primary }}.</h2>
+    <h2 class="mt-4 mb-12 font-bold text-5xl md:text-6xl leading-none text-blue-lightest text-shadow">{{ messages[language].value_primary }}.</h2>
 
     <p class="mb-12 text-xl md:text-2xl leading-normal text-blue-lighter text-shadow"
-    v-html="messages[currentLanguage].value_description"
+    v-html="messages[language].value_description"
     >
       We provide the
       <span class="font-bold text-blue-lightest">finishing touch</span>
@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  props: ['currentLanguage'],
+  props: ['language'],
   data () {
     return {
       messages: {

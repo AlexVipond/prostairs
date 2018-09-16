@@ -6,14 +6,14 @@
       <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
     </svg>
 
-    <span class="mx-2">{{ messages[currentLanguage].call_to_action }}</span>
+    <span class="mx-2">{{ messages[language].call_to_action }}</span>
   </div>
 </template>
 
 <script>
 
 export default {
-  props: ['currentLanguage', 'bgColor', 'textColor', 'borderWidth', 'borderColor'],
+  props: ['language', 'bgColor', 'textColor', 'borderWidth', 'borderColor'],
   data () {
     return {
       messages: {

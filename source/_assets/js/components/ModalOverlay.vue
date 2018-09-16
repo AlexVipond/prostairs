@@ -63,6 +63,7 @@
     watch: {
       open: function() {
         document.body.classList.toggle('overflow-hidden')
+        console.log('here')
       }
     }
   }

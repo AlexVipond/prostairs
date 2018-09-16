@@ -62,6 +62,9 @@
   transform: rotate(-90deg);
 }
 
+.move-down-100 {
+  transform: translateY(calc(100%));
+}
 
 .stroke-primary {
   stroke: config('colors.primary');

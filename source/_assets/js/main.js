@@ -8,11 +8,12 @@ import Velocity from 'velocity-animate'
 import ValueProposition from './components/ValueProposition.vue'
 import PrimaryCallToAction from './components/PrimaryCallToAction.vue'
 import SecondaryCallToAction from './components/SecondaryCallToAction.vue'
+import DropdownMenu from './components/DropdownMenu.vue'
 
 let app = new Vue({
   el: "#app",
   data: {
-    currentLanguage: 'pt',
+    language: 'pt',
     languages: [
       {
         code: 'en',
@@ -27,6 +28,7 @@ let app = new Vue({
         name: 'Português'
       }
     ],
+    dropdownOpen: false,
     messages: {
       en: {
         primary_call_to_action: 'Contact Prostairs',
@@ -42,14 +44,29 @@ let app = new Vue({
       }
     }
   },
+  computed: {
+    languageName () {
+      let language = this.languages
+        .find(language => language.code === this.language)
+
+      return language.name
+    },
+    inactiveLanguages () {
+      return this.languages.filter(language => language.code !== this.language)
+    }
+  },
   methods: {
-    setLanguage () {
-      console.log(this.language);
+    toggleDropdown () {
+      this.dropdownOpen = !this.dropdownOpen
+    },
+    setLanguage (languageCode) {
+      this.language = languageCode
     }
   },
   components: {
     ValueProposition,
     PrimaryCallToAction,
-    SecondaryCallToAction
+    SecondaryCallToAction,
+    DropdownMenu
   }
 });

@@ -23,8 +23,8 @@
     <!-- Title -->
     <div class="flex items-center justify-center mb-8 px-8">
       <div class="text-center">
-        <h2 class="mb-2 font-bold text-2xl">Great choice!</h2>
-        <h3 class="font-normal">Let's get in touch.</h3>
+        <h2 class="mb-2 font-bold text-2xl">{{ messages[language].welcome }}</h2>
+        <h3 class="font-normal">{{ messages[language].keep_going }}</h3>
       </div>
     </div>
 
@@ -60,9 +60,24 @@
 // import InfoDropdown from '../components/InfoDropdown.vue'
 
 export default {
-  props: ['open'],
+  props: ['language', 'open'],
   data () {
-    return {}
+    return {
+      messages: {
+        en: {
+          welcome: 'Great choice!',
+          keep_going: 'Let\'s get in touch.',
+        },
+        es: {
+          welcome: 'Great choice!',
+          keep_going: 'Let\'s get in touch.',
+        },
+        pt: {
+          welcome: 'Great choice!',
+          keep_going: 'Let\'s get in touch.',
+        }
+      }
+    }
   }
 }
 </script>
