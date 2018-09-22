@@ -6,7 +6,10 @@
   @enter="enter"
   @leave="leave"
   >
-    <div class="fixed flex pin bg-true-black-50 justify-center items-center p-6" :class="zIndex" v-if="open">
+    <div class="fixed flex pin bg-true-black-50 justify-center items-center p-6"
+    :class="zIndex"
+    v-if="open"
+    >
       <div class="inline-block" v-on-clickaway="clickaway">
         <!-- Modal contents -->
         <slot></slot>

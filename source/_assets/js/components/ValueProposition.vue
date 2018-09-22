@@ -5,7 +5,7 @@
       <h3>{{ messages[language].value_tertiary }}.</h3>
     </div>
 
-    <h2 class="mt-4 mb-12 font-bold text-5xl md:text-6xl leading-none text-blue-lightest text-shadow">{{ messages[language].value_primary }}.</h2>
+    <h2 class="mt-4 mb-12 font-bold text-4xl md:text-5xl leading-none text-blue-lightest text-shadow">{{ messages[language].value_primary }}.</h2>
 
     <p class="mb-12 text-xl md:text-2xl leading-normal text-blue-lighter text-shadow"
     v-html="messages[language].value_description"
