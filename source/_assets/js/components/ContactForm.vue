@@ -45,7 +45,12 @@
 
     <!-- Contact form -->
     <div class="flex-1 overflow-scroll px-8 pb-8">
-      <a href="mailto:prostairs.finishcarpentry@gmail.com" class="btn bg-blue-darker text-blue-lightest w-full mb-8">
+      <a
+      class="btn bg-blue-darker text-blue-lightest w-full mb-8"
+      href="mailto:prostairs.finishcarpentry@gmail.com"
+      target="_blank"
+      rel="noopener"
+      >
         Email us
       </a>
 

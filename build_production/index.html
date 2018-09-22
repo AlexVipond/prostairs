@@ -5,33 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        <link rel="stylesheet" href="/assets/build/css/main.css?id=644dc3af44784b38c0a1">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=c18a97cbff2c95b489de">
     </head>
     <body class="antialiased font-sans bg-blue-darkest">
         <div id="app">
-  <nav class="absolute z-30 pin-t pin-r pin-l flex items center py-4 px-4">
-    <div class="cursor-pointer relative flex items-center text-blue-lighter hover:text-blue-lightest transition" @click="toggleDropdown">
-      <svg class="inline-block h-4 w-4 mr-2 stroke-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="10"></circle>
-        <line x1="2" y1="12" x2="22" y2="12"></line>
-        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-      </svg>
-
-      <div class="relative py-2">
-        <span>{{ languageName }}</span>
-
-        <dropdown-menu :open="dropdownOpen" @close="dropdownOpen = false" class="absolute pin-b pin-l move-down-100 z-30 bg-white text-blue-darkest rounded-sm overflow-hidden shadow-lg">
-          <div
-          class="py-2 px-3 border-b-1 border-grey-lighter hover:bg-blue-lighter transition"
-          v-for="language in inactiveLanguages"
-          :key="language.code"
-          @click="setLanguage(language.code)"
-          >
-            {{ language.name }}
-          </div>
-        </dropdown-menu>
-      </div>
-    </div>
+  <nav class="absolute z-30 pin-t pin-l pin-r container mx-auto flex items-center py-4 px-8">
+    <language-setter
+    class="text-blue-lighter hover:text-blue-lightest"
+    options-bg-color="bg-white"
+    options-text-color="text-blue-darkest"
+    options-z-index="z-30"
+    option-hover-bg-color="hover:bg-blue-lighter"
+    @set-language="setLanguage"
+    ></language-setter>
   </nav>
 
   <header id="landing-page" class="flex relative h-screen min-h-400 flex items-center bg-blue-darker bg-center bg-no-repeat bg-fixed bg-cover">
@@ -42,8 +28,7 @@
 
       <div class="inline-flex flex-col sm:flex-row">
         <primary-call-to-action
-        bg-color="bg-blue-lightest"
-        text-color="text-blue-darker"
+        class="btn-lg mb-6 sm:mb-0 sm:mr-6 bg-blue-lightest text-blue-darker"
         :language="language"
         >
         </primary-call-to-action>
@@ -67,7 +52,7 @@
   </header>
 </div>
 
-<script src="/assets/build/js/main.js?id=36b9f03e52ad86dc4886"></script>
+<script src="/assets/build/js/main.js?id=df9f941795ea2b82385f"></script>
 
 
 
