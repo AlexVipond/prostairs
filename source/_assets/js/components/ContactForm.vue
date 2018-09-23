@@ -44,19 +44,39 @@
     </portal>
 
     <!-- Contact form -->
-    <div class="flex-1 overflow-scroll px-8 pb-8">
-      <a
-      class="btn bg-blue-darker text-blue-lightest w-full mb-8"
-      href="mailto:prostairs.finishcarpentry@gmail.com"
-      target="_blank"
-      rel="noopener"
-      >
-        Email us
-      </a>
+    <div class="flex-1 px-8 pb-8">
+      <div class="flex flex-col sm:flex-row items-center mb-8">
+        <a
+        class="btn flex-1 mb-4 sm:mb-0 sm:mr-3 bg-blue-darker text-blue-lightest"
+        href="mailto:prostairs.finishcarpentry@gmail.com"
+        target="_blank"
+        rel="noopener"
+        >
+          {{ messages[language].email }}
+        </a>
 
-      <a href="tel:1-978-327-8575" class="btn bg-blue-darker text-blue-lightest w-full mb-8">
-        Call us
-      </a>
+        <a
+        class="btn flex-1 sm:ml-3 bg-blue-darker text-blue-lightest"
+        href="tel:1-978-327-8575"
+        target="_blank"
+        rel="noopener"
+        >
+          {{ messages[language].call }}
+        </a>
+      </div>
+
+      <div class="text-sm text-grey-dark">
+        <p class="mb-2">
+          {{ messages[language].not_sure }}
+          <a
+          class="text-blue-light no-underline hover:underline transition"
+          href="https://www.instagram.com/prostairs.finishcarpentry/"
+          target="_blank"
+          rel="noopener"
+          >
+            {{ messages[language].instagram }}</a>.
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -70,16 +90,28 @@ export default {
     return {
       messages: {
         en: {
-          welcome: 'Great choice!',
-          keep_going: 'Let\'s get in touch.',
+          welcome: 'Let\'s get in touch!',
+          keep_going: 'Feel free to email or call us.',
+          email: 'Email us',
+          call: 'Call us',
+          not_sure: 'Not sure yet? To see examples of our work,',
+          instagram: 'browse our Instagram'
         },
         es: {
-          welcome: 'Great choice!',
-          keep_going: 'Let\'s get in touch.',
+          welcome: 'Pongamonos en contacto!',
+          keep_going: 'Le invitamos a enviar correo electrónico o llamar.',
+          email: 'Enviar correo',
+          call: 'Llamar',
+          not_sure: 'Aún no está seguro? Para ver ejemplos de nuestras obras,',
+          instagram: 'mira nuestra Instagram'
         },
         pt: {
-          welcome: 'Great choice!',
-          keep_going: 'Let\'s get in touch.',
+          welcome: 'Vamos entrar em contato!',
+          keep_going: 'Nós convidamos você a enviar email ou ligar.',
+          email: 'Enviar email',
+          call: 'Chamar',
+          not_sure: 'Ainda não tenho certeza? Para ver exemplos de nossas obras,',
+          instagram: 'olhe para o nosso Instagram'
         }
       }
     }

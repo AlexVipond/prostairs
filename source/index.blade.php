@@ -3,10 +3,10 @@
 @section('body')
 <div id="app">
   <portal-target name="modals"></portal-target>
-  
+
   <nav class="absolute z-30 pin-t pin-l pin-r container mx-auto flex items-center py-4 px-8">
     <language-setter
-    class="text-blue-lighter hover:text-blue-lightest"
+    class="ml-auto text-blue-lighter hover:text-blue-lightest"
     options-bg-color="bg-white"
     options-text-color="text-blue-darkest"
     options-z-index="z-30"

@@ -133,6 +133,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 // import InfoDropdown from '../components/InfoDropdown.vue'
 
@@ -142,16 +162,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     return {
       messages: {
         en: {
-          welcome: 'Great choice!',
-          keep_going: 'Let\'s get in touch.'
+          welcome: 'Let\'s get in touch!',
+          keep_going: 'Feel free to email or call us.',
+          email: 'Email us',
+          call: 'Call us',
+          not_sure: 'Not sure yet? To see examples of our work,',
+          instagram: 'browse our Instagram'
         },
         es: {
-          welcome: 'Great choice!',
-          keep_going: 'Let\'s get in touch.'
+          welcome: 'Pongamonos en contacto!',
+          keep_going: 'Le invitamos a enviar correo electrónico o llamar.',
+          email: 'Enviar correo',
+          call: 'Llamar',
+          not_sure: 'Aún no está seguro? Para ver ejemplos de nuestras obras,',
+          instagram: 'mira nuestra Instagram'
         },
         pt: {
-          welcome: 'Great choice!',
-          keep_going: 'Let\'s get in touch.'
+          welcome: 'Vamos entrar em contato!',
+          keep_going: 'Nós convidamos você a enviar email ou ligar.',
+          email: 'Enviar email',
+          call: 'Chamar',
+          not_sure: 'Ainda não tenho certeza? Para ver exemplos de nossas obras,',
+          instagram: 'olhe para o nosso Instagram'
         }
       }
     };
@@ -6625,33 +6657,6 @@ var render = function() {
     },
     [
       _c(
-        "svg",
-        {
-          staticClass: "inline-block h-4 w-4 mr-2 stroke-current",
-          attrs: {
-            xmlns: "http://www.w3.org/2000/svg",
-            viewBox: "0 0 24 24",
-            fill: "none",
-            "stroke-width": "2",
-            "stroke-linecap": "round",
-            "stroke-linejoin": "round"
-          }
-        },
-        [
-          _c("circle", { attrs: { cx: "12", cy: "12", r: "10" } }),
-          _vm._v(" "),
-          _c("line", { attrs: { x1: "2", y1: "12", x2: "22", y2: "12" } }),
-          _vm._v(" "),
-          _c("path", {
-            attrs: {
-              d:
-                "M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-            }
-          })
-        ]
-      ),
-      _vm._v(" "),
-      _c(
         "div",
         { staticClass: "relative py-2" },
         [
@@ -6661,7 +6666,7 @@ var render = function() {
             "dropdown-menu",
             {
               staticClass:
-                "absolute pin-b pin-l move-down-100 rounded-sm overflow-hidden shadow-lg",
+                "absolute pin-b pin-r move-down-100 rounded-sm overflow-hidden shadow-lg",
               class: [
                 _vm.optionsBgColor,
                 _vm.optionsTextColor,
@@ -6693,6 +6698,33 @@ var render = function() {
           )
         ],
         1
+      ),
+      _vm._v(" "),
+      _c(
+        "svg",
+        {
+          staticClass: "inline-block h-4 w-4 ml-2 stroke-current",
+          attrs: {
+            xmlns: "http://www.w3.org/2000/svg",
+            viewBox: "0 0 24 24",
+            fill: "none",
+            "stroke-width": "2",
+            "stroke-linecap": "round",
+            "stroke-linejoin": "round"
+          }
+        },
+        [
+          _c("circle", { attrs: { cx: "12", cy: "12", r: "10" } }),
+          _vm._v(" "),
+          _c("line", { attrs: { x1: "2", y1: "12", x2: "22", y2: "12" } }),
+          _vm._v(" "),
+          _c("path", {
+            attrs: {
+              d:
+                "M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+            }
+          })
+        ]
       )
     ]
   )
@@ -6835,7 +6867,7 @@ var render = function() {
             "div",
             {
               staticClass:
-                "fixed flex pin bg-true-black-50 justify-center items-center p-6",
+                "fixed pin p-6 bg-true-black-50 flex justify-center items-center",
               class: _vm.zIndex
             },
             [
@@ -6952,41 +6984,86 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _vm._m(0)
+      _c("div", { staticClass: "flex-1 px-8 pb-8" }, [
+        _c(
+          "div",
+          { staticClass: "flex flex-col sm:flex-row items-center mb-8" },
+          [
+            _c(
+              "a",
+              {
+                staticClass:
+                  "btn flex-1 mb-4 sm:mb-0 sm:mr-3 bg-blue-darker text-blue-lightest",
+                attrs: {
+                  href: "mailto:prostairs.finishcarpentry@gmail.com",
+                  target: "_blank",
+                  rel: "noopener"
+                }
+              },
+              [
+                _vm._v(
+                  "\n        " +
+                    _vm._s(_vm.messages[_vm.language].email) +
+                    "\n      "
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass:
+                  "btn flex-1 sm:ml-3 bg-blue-darker text-blue-lightest",
+                attrs: {
+                  href: "tel:1-978-327-8575",
+                  target: "_blank",
+                  rel: "noopener"
+                }
+              },
+              [
+                _vm._v(
+                  "\n        " +
+                    _vm._s(_vm.messages[_vm.language].call) +
+                    "\n      "
+                )
+              ]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "text-sm text-grey-dark" }, [
+          _c("p", { staticClass: "mb-2" }, [
+            _vm._v(
+              "\n        " +
+                _vm._s(_vm.messages[_vm.language].not_sure) +
+                "\n        "
+            ),
+            _c(
+              "a",
+              {
+                staticClass:
+                  "text-blue-light no-underline hover:underline transition",
+                attrs: {
+                  href: "https://www.instagram.com/prostairs.finishcarpentry/",
+                  target: "_blank",
+                  rel: "noopener"
+                }
+              },
+              [
+                _vm._v(
+                  "\n          " + _vm._s(_vm.messages[_vm.language].instagram)
+                )
+              ]
+            ),
+            _vm._v(".\n      ")
+          ])
+        ])
+      ])
     ],
     1
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "flex-1 overflow-scroll px-8 pb-8" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn bg-blue-darker text-blue-lightest w-full mb-8",
-          attrs: {
-            href: "mailto:prostairs.finishcarpentry@gmail.com",
-            target: "_blank",
-            rel: "noopener"
-          }
-        },
-        [_vm._v("\n      Email us\n    ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass: "btn bg-blue-darker text-blue-lightest w-full mb-8",
-          attrs: { href: "tel:1-978-327-8575" }
-        },
-        [_vm._v("\n      Call us\n    ")]
-      )
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {

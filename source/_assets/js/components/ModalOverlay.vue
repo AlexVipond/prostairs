@@ -6,7 +6,7 @@
   @enter="enter"
   @leave="leave"
   >
-    <div class="fixed flex pin bg-true-black-50 justify-center items-center p-6"
+    <div class="fixed pin p-6 bg-true-black-50 flex justify-center items-center"
     :class="zIndex"
     v-if="open"
     >
