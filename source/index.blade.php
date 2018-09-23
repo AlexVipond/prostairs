@@ -16,7 +16,7 @@
   </nav>
 
   <header id="landing-page" class="flex relative h-screen min-h-400 flex items-center bg-center bg-no-repeat bg-fixed bg-cover" style="background-image: url(https://res.cloudinary.com/duib7ae0a/image/upload/q_auto,f_auto/v1537664412/prostairs/khara-woods-510726-unsplash.jpg)">
-    <div class="absolute z-10 pin-t pin-l w-full h-full bg-true-black-40"></div>
+    <div class="absolute z-10 pin-t pin-l w-full h-full bg-true-black-60"></div>
 
     <div class="relative z-20 container mx-auto px-8 py-16">
       <value-proposition :language="language"></value-proposition>
