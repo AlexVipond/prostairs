@@ -14,7 +14,7 @@
 
 /* Message components */
 .btn {
-  @apply cursor-pointer inline-flex items-center justify-center px-3 py-2 rounded-sm font-medium tracking-wide no-underline shadow transition-fast;
+  @apply cursor-pointer inline-flex items-center justify-center px-3 py-2 rounded font-medium tracking-wide no-underline shadow transition-fast;
 }
 
 .btn:hover {

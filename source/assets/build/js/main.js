@@ -153,6 +153,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 // import InfoDropdown from '../components/InfoDropdown.vue'
 
@@ -440,6 +447,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -549,36 +557,36 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
           value_secondary: 'Design',
           value_tertiary: 'Installation',
           value_description: 'We provide the\
-          <span class="font-bold text-blue-lightest">finishing touch</span>\
+          <span class="font-bold text-white">finishing touch</span>\
           <br class="hidden sm:block">\
           to make your\
-          <span class="font-bold text-blue-lightest">house</span>\
+          <span class="font-bold text-white">house</span>\
           feel like a\
-          <span class="font-bold text-blue-lightest">home</span>.'
+          <span class="font-bold text-white">home</span>.'
         },
         es: {
           value_primary: 'Carpintería de obra',
           value_secondary: 'Diseño',
           value_tertiary: 'Instalación',
           value_description: 'Proporcionamos el \
-          <span class="font-bold text-blue-lightest">toque final</span>\
+          <span class="font-bold text-white">toque final</span>\
           <br class="hidden sm:block">\
           para convertir su\
-          <span class="font-bold text-blue-lightest">casa</span>\
+          <span class="font-bold text-white">casa</span>\
           en su\
-          <span class="font-bold text-blue-lightest">hogar</span>.'
+          <span class="font-bold text-white">hogar</span>.'
         },
         pt: {
           value_primary: 'Carpintaria de obra',
           value_secondary: 'Desenho',
           value_tertiary: 'Instalação',
           value_description: 'Nós fornecemos o \
-          <span class="font-bold text-blue-lightest">toque final</span>\
+          <span class="font-bold text-white">toque final</span>\
           <br class="hidden sm:block">\
           para transformar sua \
-          <span class="font-bold text-blue-lightest">casa</span>\
+          <span class="font-bold text-white">casa</span>\
           em sua\
-          <span class="font-bold text-blue-lightest">lar</span>.'
+          <span class="font-bold text-white">lar</span>.'
         }
       }
     };
@@ -6658,7 +6666,7 @@ var render = function() {
     [
       _c(
         "div",
-        { staticClass: "relative py-2" },
+        { staticClass: "relative" },
         [
           _c("span", [_vm._v(_vm._s(_vm.languageName))]),
           _vm._v(" "),
@@ -6993,7 +7001,7 @@ var render = function() {
               "a",
               {
                 staticClass:
-                  "btn flex-1 mb-4 sm:mb-0 sm:mr-3 bg-blue-darker text-blue-lightest",
+                  "btn flex items-center w-full mb-4 sm:mb-0 sm:mr-3 bg-primary-dark text-primary-lightest font-bold tracking-loose",
                 attrs: {
                   href: "mailto:prostairs.finishcarpentry@gmail.com",
                   target: "_blank",
@@ -7001,6 +7009,30 @@ var render = function() {
                 }
               },
               [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "inline-block h-4 w-4 mr-2 stroke-current",
+                    attrs: {
+                      xmlns: "http://www.w3.org/2000/svg",
+                      viewBox: "0 0 24 24",
+                      fill: "none",
+                      "stroke-width": "2",
+                      "stroke-linecap": "round",
+                      "stroke-linejoin": "round"
+                    }
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        d:
+                          "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("polyline", { attrs: { points: "22,6 12,13 2,6" } })
+                  ]
+                ),
                 _vm._v(
                   "\n        " +
                     _vm._s(_vm.messages[_vm.language].email) +
@@ -7013,7 +7045,7 @@ var render = function() {
               "a",
               {
                 staticClass:
-                  "btn flex-1 sm:ml-3 bg-blue-darker text-blue-lightest",
+                  "btn flex items-center w-full sm:ml-3 bg-primary-dark text-primary-lightest font-bold tracking-loose",
                 attrs: {
                   href: "tel:1-978-327-8575",
                   target: "_blank",
@@ -7021,6 +7053,28 @@ var render = function() {
                 }
               },
               [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "inline-block h-4 w-4 mr-2 stroke-current",
+                    attrs: {
+                      xmlns: "http://www.w3.org/2000/svg",
+                      viewBox: "0 0 24 24",
+                      fill: "none",
+                      "stroke-width": "2",
+                      "stroke-linecap": "round",
+                      "stroke-linejoin": "round"
+                    }
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        d:
+                          "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                      }
+                    })
+                  ]
+                ),
                 _vm._v(
                   "\n        " +
                     _vm._s(_vm.messages[_vm.language].call) +
@@ -7042,7 +7096,7 @@ var render = function() {
               "a",
               {
                 staticClass:
-                  "text-blue-light no-underline hover:underline transition",
+                  "text-primary-light no-underline hover:underline transition",
                 attrs: {
                   href: "https://www.instagram.com/prostairs.finishcarpentry/",
                   target: "_blank",
@@ -7087,14 +7141,14 @@ var render = function() {
       "div",
       {
         staticClass:
-          "font-bold text-xl md:text-2xl text-blue-lighter text-shadow"
+          "font-bold text-xl md:text-2xl text-grey-lighter text-shadow"
       },
       [
-        _c("h3", { staticClass: "mb-2" }, [
+        _c("h3", { staticClass: "block mb-2" }, [
           _vm._v(_vm._s(_vm.messages[_vm.language].value_secondary) + ".")
         ]),
         _vm._v(" "),
-        _c("h3", [
+        _c("h3", { staticClass: "block" }, [
           _vm._v(_vm._s(_vm.messages[_vm.language].value_tertiary) + ".")
         ])
       ]
@@ -7104,7 +7158,7 @@ var render = function() {
       "h2",
       {
         staticClass:
-          "mt-4 mb-12 font-bold text-4xl md:text-5xl leading-none text-blue-lightest text-shadow"
+          "inline-block mt-4 mb-12 p-1 font-bold text-4xl md:text-5xl leading-none text-white text-shadow"
       },
       [_vm._v(_vm._s(_vm.messages[_vm.language].value_primary) + ".")]
     ),
@@ -7113,26 +7167,22 @@ var render = function() {
       "p",
       {
         staticClass:
-          "mb-12 text-xl md:text-2xl leading-normal text-blue-lighter text-shadow",
+          "mb-12 text-xl md:text-2xl leading-normal text-grey-lighter text-shadow",
         domProps: {
           innerHTML: _vm._s(_vm.messages[_vm.language].value_description)
         }
       },
       [
         _vm._v("\n    We provide the\n    "),
-        _c("span", { staticClass: "font-bold text-blue-lightest" }, [
+        _c("span", { staticClass: "font-bold text-white" }, [
           _vm._v("finishing touch")
         ]),
         _vm._v(" "),
         _c("br", { staticClass: "hidden sm:block" }),
         _vm._v("\n    to make your\n    "),
-        _c("span", { staticClass: "font-bold text-blue-lightest" }, [
-          _vm._v("house")
-        ]),
+        _c("span", { staticClass: "font-bold text-white" }, [_vm._v("house")]),
         _vm._v("\n    feel like a\n    "),
-        _c("span", { staticClass: "font-bold text-blue-lightest" }, [
-          _vm._v("home")
-        ]),
+        _c("span", { staticClass: "font-bold text-white" }, [_vm._v("home")]),
         _vm._v(".\n  ")
       ]
     )
@@ -7185,9 +7235,11 @@ var render = function() {
           _c("path", {
             attrs: {
               d:
-                "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
             }
-          })
+          }),
+          _vm._v(" "),
+          _c("polyline", { attrs: { points: "22,6 12,13 2,6" } })
         ]
       ),
       _vm._v(" "),

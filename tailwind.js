@@ -46,7 +46,16 @@ View the full documentation at https://tailwindcss.com.
 let colors = {
   'transparent': 'transparent',
 
+  'true-black-10': 'rgba(0,0,0,0.1)',
+  'true-black-20': 'rgba(0,0,0,0.2)',
+  'true-black-30': 'rgba(0,0,0,0.3)',
+  'true-black-40': 'rgba(0,0,0,0.4)',
   'true-black-50': 'rgba(0,0,0,0.5)',
+  'true-black-60': 'rgba(0,0,0,0.6)',
+  'true-black-70': 'rgba(0,0,0,0.7)',
+  'true-black-80': 'rgba(0,0,0,0.8)',
+  'true-black-90': 'rgba(0,0,0,0.9)',
+  'true-black': '#000000',
 
   'black': '#22292f',
   'grey-darkest': '#3d4852',
@@ -98,13 +107,13 @@ let colors = {
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
 
-  'blue-darkest': '#12283a',
-  'blue-darker': '#1c3d5a',
-  'blue-dark': '#2779bd',
-  'blue': '#3490dc',
-  'blue-light': '#6cb2eb',
-  'blue-lighter': '#bcdefa',
-  'blue-lightest': '#eff8ff',
+  'primary-darkest': '#12283a',
+  'primary-darker': '#1c3d5a',
+  'primary-dark': '#2779bd',
+  'primary': '#3490dc',
+  'primary-light': '#6cb2eb',
+  'primary-lighter': '#bcdefa',
+  'primary-lightest': '#eff8ff',
 
   'indigo-darkest': '#191e38',
   'indigo-darker': '#2f365f',

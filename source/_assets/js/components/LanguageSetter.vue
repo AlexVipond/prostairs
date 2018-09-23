@@ -3,7 +3,7 @@
   class="cursor-pointer relative flex items-center transition"
   @click="open = !open"
   >
-    <div class="relative py-2">
+    <div class="relative">
       <span>{{ languageName }}</span>
 
       <dropdown-menu
