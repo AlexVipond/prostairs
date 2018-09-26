@@ -15,7 +15,7 @@
     ></language-setter>
   </nav>
 
-  <header id="landing-page" class="flex relative h-screen min-h-400 flex items-center bg-center bg-no-repeat bg-fixed bg-cover" style="background-image: url(https://res.cloudinary.com/duib7ae0a/image/upload/q_auto,f_auto/v1537664412/prostairs/khara-woods-510726-unsplash.jpg)">
+  <header id="landing-page" class="flex relative h-screen min-h-400 flex items-center bg-center bg-no-repeat bg-fixed bg-cover" style="background-image: url(https://res.cloudinary.com/duib7ae0a/image/upload/q_auto,f_auto/prostairs/light-wood.jpg)">
     <div class="absolute z-10 pin-t pin-l w-full h-full bg-true-black-60"></div>
 
     <div class="relative z-20 container mx-auto px-8 py-16">
@@ -23,7 +23,7 @@
 
       <div class="inline-flex flex-col sm:flex-row">
         <primary-call-to-action
-        class="btn-lg mb-6 sm:mb-0 sm:mr-6 bg-white text-primary-dark font-bold"
+        class="btn-lg mb-6 sm:mb-0 sm:mr-6 bg-white text-primary-dark"
         :language="language"
         >
         </primary-call-to-action>

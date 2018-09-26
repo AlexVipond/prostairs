@@ -5,18 +5,18 @@
       <h3 class="block">{{ messages[language].value_tertiary }}.</h3>
     </div>
 
-    <h2 class="inline-block mt-4 mb-12 p-1 font-bold text-4xl md:text-5xl leading-none text-white text-shadow">{{ messages[language].value_primary }}.</h2>
+    <h2 class="inline-block mt-4 mb-12 p-1 font-bold text-4xl md:text-5xl leading-none text-grey-lightest text-shadow">{{ messages[language].value_primary }}.</h2>
 
     <p class="mb-12 text-xl md:text-2xl leading-normal text-grey-lighter text-shadow"
     v-html="messages[language].value_description"
     >
       We provide the
-      <span class="font-bold text-white">finishing touch</span>
+      <span class="font-bold text-grey-lightest">finishing touch</span>
       <br class="hidden sm:block">
       to make your
-      <span class="font-bold text-white">house</span>
+      <span class="font-bold text-grey-lightest">house</span>
       feel like a
-      <span class="font-bold text-white">home</span>.
+      <span class="font-bold text-grey-lightest">home</span>.
     </p>
   </div>
 </template>
@@ -32,36 +32,36 @@ export default {
           value_secondary: 'Design',
           value_tertiary: 'Installation',
           value_description: 'We provide the\
-          <span class="font-bold text-white">finishing touch</span>\
+          <span class="font-bold text-grey-lightest">finishing touch</span>\
           <br class="hidden sm:block">\
           to make your\
-          <span class="font-bold text-white">house</span>\
+          <span class="font-bold text-grey-lightest">house</span>\
           feel like a\
-          <span class="font-bold text-white">home</span>.'
+          <span class="font-bold text-grey-lightest">home</span>.'
         },
         es: {
           value_primary: 'Carpintería de obra',
           value_secondary: 'Diseño',
           value_tertiary: 'Instalación',
           value_description: 'Proporcionamos el \
-          <span class="font-bold text-white">toque final</span>\
+          <span class="font-bold text-grey-lightest">toque final</span>\
           <br class="hidden sm:block">\
           para convertir su\
-          <span class="font-bold text-white">casa</span>\
+          <span class="font-bold text-grey-lightest">casa</span>\
           en su\
-          <span class="font-bold text-white">hogar</span>.'
+          <span class="font-bold text-grey-lightest">hogar</span>.'
         },
         pt: {
           value_primary: 'Carpintaria de obra',
           value_secondary: 'Desenho',
           value_tertiary: 'Instalação',
           value_description: 'Nós fornecemos o \
-          <span class="font-bold text-white">toque final</span>\
+          <span class="font-bold text-grey-lightest">toque final</span>\
           <br class="hidden sm:block">\
           para transformar sua \
-          <span class="font-bold text-white">casa</span>\
+          <span class="font-bold text-grey-lightest">casa</span>\
           em sua\
-          <span class="font-bold text-white">lar</span>.'
+          <span class="font-bold text-grey-lightest">lar</span>.'
         }
       }
     }
