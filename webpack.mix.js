@@ -40,6 +40,7 @@ mix.js('source/_assets/js/main.js', 'js')
       ]
     })
     .purgeCss({
+      enabled: true,
       folders: ['source'],
     })
     .version();
