@@ -1,33 +1,34 @@
+// Import third-party libraries and components
 import Vue from 'vue';
+
+import Velocity from 'velocity-animate'
 
 var PortalVue = require('portal-vue')
 Vue.use(PortalVue)
 
-import Velocity from 'velocity-animate'
+
+// Import my Vue components and data
+import computeLanguage from './scripts/compute-language.js'
+import languageData from './data/languageData.json'
+import LanguageChanger from './components/LanguageChanger.vue'
 
 import ValueProposition from './components/ValueProposition.vue'
 import PrimaryCallToAction from './components/PrimaryCallToAction.vue'
 import SecondaryCallToAction from './components/SecondaryCallToAction.vue'
-import LanguageSetter from './components/LanguageSetter.vue'
 
+
+// Initialize app
 let app = new Vue({
   el: "#app",
   data: {
-    language: 'en',
-    languageSetterOpen: false,
-    messages: {
-      en: {
-        primary_call_to_action: 'Contact Prostairs',
-        secondary_call_to_action: 'See our work'
-      },
-      es: {
-        primary_call_to_action: 'Contactar Prostairs',
-        secondary_call_to_action: 'Ver nuestras obras'
-      },
-      pt: {
-        primary_call_to_action: 'Contactar Prostairs',
-        secondary_call_to_action: 'Ver nossos trabalhos'
-      }
+    language: ''
+  },
+  computed: {
+    defaultLanguage () {
+      return languageData.defaultLanguage
+    },
+    languages () {
+      return languageData.languages
     }
   },
   methods: {
@@ -39,6 +40,9 @@ let app = new Vue({
     ValueProposition,
     PrimaryCallToAction,
     SecondaryCallToAction,
-    LanguageSetter
+    LanguageChanger
+  },
+  created () {
+    this.language = computeLanguage(this.languages, this.defaultLanguage)
   }
 });
