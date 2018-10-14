@@ -149,7 +149,7 @@ export default {
           or: 'or, you can call me:',
           call: 'Call us',
           not_sure: 'Not sure yet? To see examples of our work,',
-          alternate_action: 'browse our Instagram'
+          alternate_action: 'browse our Instagram.'
         },
         es: {
           title: 'Pongamonos en contacto!',
@@ -163,7 +163,7 @@ export default {
           or: 'o, puede llamarnos:',
           call: 'Llamar',
           not_sure: 'Aún no tiene certeza? Para ver ejemplos de nuestras obras,',
-          alternate_action: 'mira nuestra Instagram'
+          alternate_action: 'mira nuestra Instagram.'
         },
         pt: {
           title: 'Vamos entrar em contato!',
@@ -177,7 +177,7 @@ export default {
           or: 'ou, você pode nos ligar:',
           call: 'Ligar',
           not_sure: 'Ainda não tenho certeza? Para ver exemplos de nossas obras,',
-          alternate_action: 'olhe para o nosso Instagram'
+          alternate_action: 'olhe para o nosso Instagram.'
         }
       }
     }

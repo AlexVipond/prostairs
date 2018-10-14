@@ -27,7 +27,7 @@
       <div class="inline-flex flex-col sm:flex-row">
         <button class="mb-6 sm:mb-0 sm:mr-6" type="button" name="button">
           <primary-call-to-action
-            class="btn md:btn-lg hover:btn-grow bg-white tracking-normal font-400 text-primary"
+            class="btn md:btn-lg w-full hover:btn-grow bg-white tracking-normal font-400 text-primary"
             :language="language"
             :first-letter-is-upper-case="true"
             :show-icon-before-message="true"
@@ -38,7 +38,7 @@
 
         <button type="button" name="button">
           <secondary-call-to-action
-            class="btn md:btn-lg hover:btn-grow bg-transparent border border-white text-white"
+            class="btn md:btn-lg w-full hover:btn-grow bg-transparent border border-white text-white"
             :language="language"
             :first-letter-is-upper-case="true"
             :show-icon-before-message="true"
