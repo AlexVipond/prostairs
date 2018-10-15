@@ -5,7 +5,7 @@
 <div id="app">
   <portal-target name="modals"></portal-target>
 
-  <nav class="absolute z-30 pin-t pin-l pin-r flex items-center py-2 px-8 border-primary">
+  <nav class="absolute z-30 pin-t pin-l pin-r flex items-center py-2 px-8">
     <!-- Logo -->
     <a
       class="mr-auto p-1 text-primary-gray-100"
@@ -57,13 +57,13 @@
     </language-changer>
   </nav>
 
-  <header id="landing-page" class="flex relative h-screen min-h-400 flex items-center bg-center bg-no-repeat bg-fixed bg-cover" style="background-image: url(https://res.cloudinary.com/duib7ae0a/image/upload/q_auto,f_auto,w_1500/prostairs/light-wood.jpg)">
-    <div class="absolute z-10 pin-t pin-l w-full h-full bg-true-black-40"></div>
+  <header id="landing-page" class="flex items-center relative h-screen min-h-400 bg-center bg-no-repeat bg-fixed bg-cover" style="background-image: url(https://res.cloudinary.com/duib7ae0a/image/upload/q_auto,f_auto,w_1500/prostairs/light-wood.jpg)">
+    <div class="absolute z-10 pin-t pin-l w-full h-full bg-true-black-50"></div>
 
     <div class="relative z-20 container mx-auto px-8 py-16">
-      <value-proposition :language="language"></value-proposition>
+      <value-proposition class="md:text-center" :language="language"></value-proposition>
 
-      <div class="inline-flex flex-col sm:flex-row">
+      <div class="inline-flex flex-col sm:flex-row  md:flex md:justify-center">
         <button class="mb-6 sm:mb-0 sm:mr-6" type="button" name="button">
           <primary-call-to-action
             class="btn md:btn-lg w-full hover:btn-grow bg-white tracking-normal font-400 text-primary"

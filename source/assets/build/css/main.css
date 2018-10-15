@@ -747,10 +747,6 @@ button:focus {
   background-color: transparent;
 }
 
-.bg-true-black-40 {
-  background-color: rgba(0, 0, 0, .4);
-}
-
 .bg-true-black-50 {
   background-color: rgba(0, 0, 0, .5);
 }
@@ -882,6 +878,10 @@ button:focus {
 
 .font-700 {
   font-weight: 700;
+}
+
+.h-3 {
+  height: .75rem;
 }
 
 .h-4 {
@@ -1397,8 +1397,8 @@ button:focus {
             flex-direction: row;
   }
 
-  .sm\:h-6 {
-    height: 1.5rem;
+  .sm\:h-4 {
+    height: 1rem;
   }
 
   .sm\:mb-0 {
@@ -1432,8 +1432,24 @@ button:focus {
     font-size: 1.125rem;
   }
 
+  .md\:flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .md\:justify-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .md\:h-6 {
     height: 1.5rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
   }
 
   .md\:text-2xl {

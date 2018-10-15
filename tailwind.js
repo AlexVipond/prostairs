@@ -52,6 +52,16 @@ let colors = {
   'primary-600' : '#252F55',
   'primary-700' : '#13172B',
 
+  'primary-10' : 'rgb(62, 78, 142, 0.1)',
+  'primary-20' : 'rgb(62, 78, 142, 0.2)',
+  'primary-30' : 'rgb(62, 78, 142, 0.3)',
+  'primary-40' : 'rgb(62, 78, 142, 0.4)',
+  'primary-50' : 'rgb(62, 78, 142, 0.5)',
+  'primary-60' : 'rgb(62, 78, 142, 0.6)',
+  'primary-70' : 'rgb(62, 78, 142, 0.7)',
+  'primary-80' : 'rgb(62, 78, 142, 0.8)',
+  'primary-90' : 'rgb(62, 78, 142, 0.9)',
+
   'primary-gray-100' : '#F2F3F7',
   'primary-gray-200' : '#CACFDE',
   'primary-gray-300' : '#A3ACC6',

@@ -60,6 +60,10 @@ button:focus {
 @tailwind utilities;
 
 @variants responsive, hover, focus, active, group-hover {
+  .bg-gradient-primary-transparent {
+    background-image: linear-gradient(#3E4E8E 10%, transparent 100%);
+  }
+
   .text-color-inherit {
     color: inherit;
   }

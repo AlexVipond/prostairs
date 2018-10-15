@@ -127,7 +127,7 @@
 
     <!-- blue -->
     <div class="w-full flex items-center justify-center">
-      <svg class="h-4 sm:h-6" viewBox="0 0 4321 638" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="h-3 sm:h-4" viewBox="0 0 4321 638" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M60 437.5V637.5H460L660 437.5V37.5H460V237.5H260V437.5H60Z" fill="#B2B8D2"/>
         <rect y="400" width="320" height="75" rx="37.5" fill="#3E4E8E"/>
         <rect x="200" y="200" width="320" height="75" rx="37.5" fill="#3E4E8E"/>

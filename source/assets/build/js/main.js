@@ -7372,7 +7372,7 @@ var render = function() {
         _c(
           "svg",
           {
-            staticClass: "h-4 sm:h-6",
+            staticClass: "h-3 sm:h-4",
             attrs: {
               viewBox: "0 0 4321 638",
               fill: "none",
