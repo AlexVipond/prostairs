@@ -66,7 +66,7 @@
       <div class="inline-flex flex-col sm:flex-row">
         <button class="mb-6 sm:mb-0 sm:mr-6" type="button" name="button">
           <primary-call-to-action
-            class="btn md:btn-lg w-full hover:btn-grow bg-primary tracking-normal font-400 text-primary-100"
+            class="btn md:btn-lg w-full hover:btn-grow bg-white tracking-normal font-400 text-primary"
             :language="language"
             :first-letter-is-upper-case="true"
             :show-icon-before-message="true"
