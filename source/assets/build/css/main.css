@@ -630,7 +630,7 @@ table {
 }
 
 html {
-  font-size: 17.5px;
+  font-size: 18px;
 }
 
 a {
@@ -1118,16 +1118,16 @@ button:focus {
   color: #252f55;
 }
 
-.text-primary-gray-100 {
-  color: #f2f3f7;
-}
-
 .text-primary-gray-200 {
   color: #cacfde;
 }
 
 .text-primary-gray-300 {
   color: #a3acc6;
+}
+
+.text-primary-gray {
+  color: #7b88ad;
 }
 
 .text-black {
@@ -1152,6 +1152,10 @@ button:focus {
 
 .hover\:text-primary-100:hover {
   color: #ecedf4;
+}
+
+.hover\:text-primary-gray-100:hover {
+  color: #f2f3f7;
 }
 
 .hover\:text-gray-600:hover {

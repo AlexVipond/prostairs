@@ -8,7 +8,7 @@
   <nav class="absolute z-30 pin-t pin-l pin-r flex items-center py-2 px-8">
     <!-- Logo -->
     <a
-      class="mr-auto p-1 text-primary-gray-100"
+      class="mr-auto p-1 text-primary-gray-200 hover:text-primary-gray-100 transition"
       href="#">
       <!-- blue -->
       <!-- <svg class="h-4" viewBox="0 0 4321 638" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +48,7 @@
     <language-changer
       :language="language"
       :languages="languages"
-      class="rounded-sm p-1 ml-auto h-8 text-primary-gray-100"
+      class="rounded-sm p-1 ml-auto h-8 text-primary-gray-200 hover:text-primary-gray-100 transition"
       options-bg-color="bg-white"
       options-text-color="text-primary-600"
       options-z-index="z-30"
@@ -57,7 +57,7 @@
     </language-changer>
   </nav>
 
-  <header id="landing-page" class="flex items-center relative h-screen min-h-400 bg-center bg-no-repeat bg-fixed bg-cover" style="background-image: url(https://res.cloudinary.com/duib7ae0a/image/upload/q_auto,f_auto,w_1500/prostairs/light-wood.jpg)">
+  <header id="landing-page" class="flex items-center relative h-screen min-h-400 bg-center bg-no-repeat bg-fixed bg-cover" style="background-image: url({{ $page->landing_page_image }})">
     <div class="absolute z-10 pin-t pin-l w-full h-full bg-true-black-50"></div>
 
     <div class="relative z-20 container mx-auto px-8 py-16">
