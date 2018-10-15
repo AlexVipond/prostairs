@@ -21,7 +21,7 @@ export default {
     return {
       messages: {
         en: {
-          value_primary: 'Finish Carpentry',
+          value_primary: 'Prostairs Finish Carpentry',
           value_secondary: 'Design',
           value_tertiary: 'Installation',
           value_description: 'We provide the\
@@ -33,7 +33,7 @@ export default {
           <span class="font-600 text-gray-100">home</span>.'
         },
         es: {
-          value_primary: 'Carpintería de obra',
+          value_primary: 'Prostairs Carpintería de obra',
           value_secondary: 'Diseño',
           value_tertiary: 'Instalación',
           value_description: 'Proporcionamos el \
@@ -45,7 +45,7 @@ export default {
           <span class="font-600 text-gray-100">hogar</span>.'
         },
         pt: {
-          value_primary: 'Carpintaria de obra',
+          value_primary: 'Prostairs Carpintaria de obra',
           value_secondary: 'Desenho',
           value_tertiary: 'Instalação',
           value_description: 'Nós fornecemos o \
