@@ -743,8 +743,8 @@ button:focus {
   background-color: #fcfcfd;
 }
 
-.bg-transparent {
-  background-color: transparent;
+.bg-true-black-40 {
+  background-color: rgba(0, 0, 0, .4);
 }
 
 .bg-true-black-50 {
@@ -791,8 +791,16 @@ button:focus {
   border-radius: .5rem;
 }
 
+.border-0 {
+  border-width: 0;
+}
+
 .border {
   border-width: 1px;
+}
+
+.border-t-6 {
+  border-top-width: 6px;
 }
 
 .cursor-pointer {
@@ -1136,10 +1144,6 @@ button:focus {
 
 .text-black {
   color: #22292f;
-}
-
-.text-white {
-  color: #fcfcfd;
 }
 
 .text-gray-500 {

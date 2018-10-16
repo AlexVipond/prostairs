@@ -5,7 +5,7 @@
 <div id="app">
   <portal-target name="modals"></portal-target>
 
-  <nav class="absolute z-30 pin-t pin-l pin-r flex items-center py-2 px-8">
+  <nav class="absolute z-30 pin-t pin-l pin-r flex items-center py-2 px-8 border-t-6 border-primary">
     <!-- Logo -->
     <a
       class="mr-auto p-1 text-primary-gray-200 hover:text-primary-gray-100 transition"
@@ -41,7 +41,7 @@
   </nav>
 
   <header id="landing-page" class="flex items-center relative h-screen min-h-400 bg-center bg-no-repeat bg-fixed bg-cover" style="background-image: url({{ $page->landing_page_image }})">
-    <div class="absolute z-10 pin-t pin-l w-full h-full bg-true-black-50"></div>
+    <div class="absolute z-10 pin-t pin-l w-full h-full bg-true-black-40"></div>
 
     <div class="relative z-20 container mx-auto px-8 py-16">
       <value-proposition class="md:text-center" :language="language"></value-proposition>
@@ -49,7 +49,7 @@
       <div class="inline-flex flex-col sm:flex-row  md:flex md:justify-center">
         <button class="mb-6 sm:mb-0 sm:mr-6" type="button" name="button">
           <primary-call-to-action
-            class="btn md:btn-lg w-full hover:btn-grow bg-white tracking-normal font-400 text-primary"
+            class="btn md:btn-lg w-full hover:btn-grow bg-primary tracking-normal font-400 text-primary-100"
             :language="language"
             :first-letter-is-upper-case="true"
             :show-icon-before-message="true"
@@ -60,7 +60,7 @@
 
         <button type="button" name="button">
           <secondary-call-to-action
-            class="btn md:btn-lg w-full hover:btn-grow bg-transparent border border-white text-white"
+            class="btn md:btn-lg w-full hover:btn-grow bg-white border-0 border-white text-primary"
             :language="language"
             :first-letter-is-upper-case="true"
             :show-icon-before-message="true"
