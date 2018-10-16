@@ -880,10 +880,6 @@ button:focus {
   font-weight: 700;
 }
 
-.h-3 {
-  height: .75rem;
-}
-
 .h-4 {
   height: 1rem;
 }
@@ -898,6 +894,10 @@ button:focus {
 
 .h-8 {
   height: 2rem;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .h-24 {
@@ -959,8 +959,16 @@ button:focus {
   margin-bottom: 1rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .mb-8 {
@@ -1401,8 +1409,12 @@ button:focus {
             flex-direction: row;
   }
 
-  .sm\:h-4 {
-    height: 1rem;
+  .sm\:h-8 {
+    height: 2rem;
+  }
+
+  .sm\:h-16 {
+    height: 4rem;
   }
 
   .sm\:mb-0 {
@@ -1450,6 +1462,10 @@ button:focus {
 
   .md\:h-6 {
     height: 1.5rem;
+  }
+
+  .md\:h-24 {
+    height: 6rem;
   }
 
   .md\:text-center {
