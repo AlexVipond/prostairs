@@ -5,10 +5,10 @@
 <div id="app">
   <portal-target name="modals"></portal-target>
 
-  <nav class="absolute z-30 pin-t pin-l pin-r flex items-center py-2 px-8 border-t-6 border-primary">
+  <nav class="absolute z-30 pin-t pin-l pin-r flex items-center py-2 px-8 border-t-6 border-primary text-primary-gray-100">
     <!-- Logo -->
     <a
-      class="mr-auto p-1 text-primary-gray-200 hover:text-primary-gray-100 transition"
+      class="mr-auto p-1 text-color-inherit opacity-70 hover:opacity-100 transition"
       href="#">
       <!-- white -->
       <svg class="h-4 fill-current" viewBox="0 0 4358 638" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +31,7 @@
     <language-changer
       :language="language"
       :languages="languages"
-      class="rounded-sm p-1 ml-auto h-8 text-primary-gray-200 hover:text-primary-gray-100 transition"
+      class="rounded-sm p-1 ml-auto h-8 opacity-70 hover:opacity-100 transition"
       options-bg-color="bg-white"
       options-text-color="text-primary-600"
       options-z-index="z-30"

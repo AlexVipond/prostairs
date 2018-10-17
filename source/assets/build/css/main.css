@@ -999,6 +999,14 @@ button:focus {
   max-width: 30rem;
 }
 
+.opacity-70 {
+  opacity: .7;
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1130,6 +1138,10 @@ button:focus {
   color: #252f55;
 }
 
+.text-primary-gray-100 {
+  color: #f2f3f7;
+}
+
 .text-primary-gray-200 {
   color: #cacfde;
 }
@@ -1160,10 +1172,6 @@ button:focus {
 
 .hover\:text-primary-100:hover {
   color: #ecedf4;
-}
-
-.hover\:text-primary-gray-100:hover {
-  color: #f2f3f7;
 }
 
 .hover\:text-gray-600:hover {
