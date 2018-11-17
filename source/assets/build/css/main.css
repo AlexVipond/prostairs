@@ -959,6 +959,10 @@ button:focus {
   margin-left: .5rem;
 }
 
+.ml-3 {
+  margin-left: .75rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
