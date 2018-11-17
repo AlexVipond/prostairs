@@ -20,113 +20,115 @@
       </div>
     </div>
 
-    <!-- Title -->
-    <div class="flex items-center justify-center mb-8 px-8">
-      <div class="text-center">
-        <h2 class="mb-2 font-600 text-2xl">{{ messages[language].title }}</h2>
-        <h3 class="font-400">{{ messages[language].subtitle }}</h3>
+    <div class="overflow-scroll">
+      <!-- Title -->
+      <div class="flex items-center justify-center mb-8 px-8">
+        <div class="text-center">
+          <h2 class="mb-2 font-600 text-2xl">{{ messages[language].title }}</h2>
+          <h3 class="font-400">{{ messages[language].subtitle }}</h3>
+        </div>
       </div>
-    </div>
 
-    <!-- Info tooltip -->
-    <portal to="contact-modal-info">
-      <!-- <info-tooltip class="w-full tracking-wide leading-tight"
-      z-index="z-50"
-      bg-color="bg-primary"
-      text-color="text-primary-lightest"
-      tooltip-arrow-border-color="border-primary"
-      tooltip-arrow-position="top-left-top"
-      icon-height="1.5rem"
-      icon-width="1.5rem"
-      :open="infoTooltipOpen"
-      >
-    </info-tooltip> -->
-    </portal>
-
-    <!-- Contact form -->
-    <form
-      action="https://formspree.io/prostairs.finishcarpentry@gmail.com"
-      method="POST"
-      class="flex-1 mb-4 sm:mb-8 px-8 overflow-scroll">
-      <label class="block mb-4">
-        <span class="block my-2 text-sm font-700">
-          {{ messages[language].email }}:
-        </span>
-        <input
-        type="email"
-        name="email"
-        class="block w-full px-3 py-1 rounded bg-gray-200 leading-normal text-black"
-        placeholder="email@example.com"></input>
-      </label>
-
-      <label class="block mb-4">
-        <span class="block my-2 text-sm font-700">
-          {{ messages[language].subject }}:
-        </span>
-        <input
-        type="text"
-        name="_subject"
-        class="block w-full px-3 py-1 rounded bg-gray-200 leading-normal text-black"
-        :value="messages[language].subject_placeholder"></input>
-      </label>
-
-      <span class="block my-2 text-sm font-700">
-        {{ messages[language].message }}:
-      </span>
-      <textarea name="message" :placeholder="messages[language].message_placeholder"
-      class="h-24 w-full px-3 py-3 rounded bg-gray-200 mb-4"></textarea>
-
-      <button
-      type="submit"
-      class="btn hover:btn-lift flex items-center w-full mb-4 bg-primary text-primary-100 transition">
-        <svg class="inline-block h-4 w-4 mr-2 stroke-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-          <polyline points="22,6 12,13 2,6"></polyline>
-        </svg>
-        {{ messages[language].submit_form }}
-      </button>
-
-      <div class="flex items-center mb-4">
-        <span class="inline-block">{{ messages[language].or }}</span>
-
-        <a
-        class="btn hover:btn-lift flex items-center ml-3 flex-1 bg-primary text-primary-100 font-bold tracking-loose transition"
-        href="#"
-        target="_blank"
-        rel="noopener"
+      <!-- Info tooltip -->
+      <portal to="contact-modal-info">
+        <!-- <info-tooltip class="w-full tracking-wide leading-tight"
+        z-index="z-50"
+        bg-color="bg-primary"
+        text-color="text-primary-lightest"
+        tooltip-arrow-border-color="border-primary"
+        tooltip-arrow-position="top-left-top"
+        icon-height="1.5rem"
+        icon-width="1.5rem"
+        :open="infoTooltipOpen"
         >
+      </info-tooltip> -->
+      </portal>
+
+      <!-- Contact form -->
+      <form
+        action="https://formspree.io/prostairs.finishcarpentry@gmail.com"
+        method="POST"
+        class="flex-1 mb-4 sm:mb-8 px-8">
+        <label class="block mb-4">
+          <span class="block my-2 text-sm font-700">
+            {{ messages[language].email }}:
+          </span>
+          <input
+          type="email"
+          name="email"
+          class="block w-full px-3 py-1 rounded bg-gray-200 leading-normal text-black"
+          placeholder="email@example.com"></input>
+        </label>
+
+        <label class="block mb-4">
+          <span class="block my-2 text-sm font-700">
+            {{ messages[language].subject }}:
+          </span>
+          <input
+          type="text"
+          name="_subject"
+          class="block w-full px-3 py-1 rounded bg-gray-200 leading-normal text-black"
+          :value="messages[language].subject_placeholder"></input>
+        </label>
+
+        <span class="block my-2 text-sm font-700">
+          {{ messages[language].message }}:
+        </span>
+        <textarea name="message" :placeholder="messages[language].message_placeholder"
+        class="h-24 w-full px-3 py-3 rounded bg-gray-200 mb-4"></textarea>
+
+        <button
+        type="submit"
+        class="btn hover:btn-lift flex items-center w-full mb-4 bg-primary text-primary-100 transition">
           <svg class="inline-block h-4 w-4 mr-2 stroke-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
           </svg>
-          {{ messages[language].call }}
-        </a>
-      </div>
+          {{ messages[language].submit_form }}
+        </button>
 
-      <div class="text-sm text-gray-500">
-        <p class="">
-          {{ messages[language].not_sure }}
-          <secondary-call-to-action
-            class="text-primary no-underline hover:underline transition"
-            :language="language"
-            :first-letter-is-upper-case="false"
-            :messages-replacement="{
-              en: {
-                call_to_action: messages.en.alternate_action
-              },
-              es: {
-                call_to_action: messages.es.alternate_action
-              },
-              pt: {
-                call_to_action: messages.pt.alternate_action
-              }
-            }"
-            :show-icon-before-message="false"
-            :show-icon-after-message="false">
-          </secondary-call-to-action>
-        </p>
-      </div>
-    </form>
+        <div class="flex items-center mb-4">
+          <span class="inline-block">{{ messages[language].or }}</span>
 
+          <a
+          class="btn hover:btn-lift flex items-center ml-3 flex-1 bg-primary text-primary-100 font-bold tracking-loose transition"
+          href="#"
+          target="_blank"
+          rel="noopener"
+          >
+            <svg class="inline-block h-4 w-4 mr-2 stroke-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            {{ messages[language].call }}
+          </a>
+        </div>
+
+        <div class="text-sm text-gray-500">
+          <p class="">
+            {{ messages[language].not_sure }}
+            <secondary-call-to-action
+              class="text-primary no-underline hover:underline transition"
+              :language="language"
+              :first-letter-is-upper-case="false"
+              :messages-replacement="{
+                en: {
+                  call_to_action: messages.en.alternate_action
+                },
+                es: {
+                  call_to_action: messages.es.alternate_action
+                },
+                pt: {
+                  call_to_action: messages.pt.alternate_action
+                }
+              }"
+              :show-icon-before-message="false"
+              :show-icon-after-message="false">
+            </secondary-call-to-action>
+          </p>
+        </div>
+      </form>
+    </div>
+    
     <!-- blue -->
     <div class="w-full flex items-center justify-center">
       <svg class="h-6 sm:h-8" viewBox="0 0 4358 1008" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -225,7 +227,6 @@
         <path d="M92.6599 52.6308V58.561V77.8343H134.542V92.6599C134.542 105.912 135.348 119.432 139.36 131.392C142.287 140.114 146.918 148.006 154.186 154.358C160.366 159.76 168.453 164.049 179.019 166.788C180.874 167.269 183.239 167.842 186.061 168.499C190.111 169.44 195.103 170.552 200.887 171.807C209.812 173.742 220.622 176.016 232.762 178.524L247.587 181.57C257.641 183.624 268.35 185.792 279.462 188.027L294.288 191.001C304.731 193.091 315.421 195.219 326.163 197.35L340.988 200.286C351.712 202.406 362.401 204.512 372.863 206.568L387.689 209.478C398.77 211.651 409.477 213.745 419.564 215.714L434.39 218.604C446.398 220.943 457.194 223.041 466.265 224.8L481.09 227.673C490.506 229.495 495.916 230.538 495.916 230.538C499.818 231.725 505.793 233.076 512.965 234.002C517.502 234.587 522.517 235.003 527.791 235.1C537.987 235.288 549.146 234.285 559.666 231.015C560.161 230.861 560.656 230.702 561.148 230.538C565.816 228.982 570.278 227.402 574.491 225.838C592.76 219.059 606.335 212.593 611.555 209.782V184.578C605.131 188.038 586.055 197.032 561.148 205.334C536.241 213.637 507.282 208.794 495.916 205.334C495.916 205.334 252.776 157.892 212.747 147.515C172.718 137.137 163.823 123.794 163.823 92.6599V52.6308H92.6599Z" fill="#3E4E8E"/>
         <path d="M694.578 593.023H8.89535V637.5H694.578V593.023Z" fill="#3E4E8E"/>
       </svg>
-
     </div>
   </div>
 </template>

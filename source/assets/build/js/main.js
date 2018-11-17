@@ -304,6 +304,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 // import InfoTooltip from '../components/InfoTooltip.vue'
 
@@ -7339,205 +7340,217 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "flex items-center justify-center mb-8 px-8" }, [
-        _c("div", { staticClass: "text-center" }, [
-          _c("h2", { staticClass: "mb-2 font-600 text-2xl" }, [
-            _vm._v(_vm._s(_vm.messages[_vm.language].title))
-          ]),
-          _vm._v(" "),
-          _c("h3", { staticClass: "font-400" }, [
-            _vm._v(_vm._s(_vm.messages[_vm.language].subtitle))
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("portal", { attrs: { to: "contact-modal-info" } }),
-      _vm._v(" "),
       _c(
-        "form",
-        {
-          staticClass: "flex-1 mb-4 sm:mb-8 px-8 overflow-scroll",
-          attrs: {
-            action: "https://formspree.io/prostairs.finishcarpentry@gmail.com",
-            method: "POST"
-          }
-        },
+        "div",
+        { staticClass: "overflow-scroll" },
         [
-          _c("label", { staticClass: "block mb-4" }, [
-            _c("span", { staticClass: "block my-2 text-sm font-700" }, [
-              _vm._v(
-                "\n        " +
-                  _vm._s(_vm.messages[_vm.language].email) +
-                  ":\n      "
-              )
-            ]),
-            _vm._v(" "),
-            _c("input", {
-              staticClass:
-                "block w-full px-3 py-1 rounded bg-gray-200 leading-normal text-black",
-              attrs: {
-                type: "email",
-                name: "email",
-                placeholder: "email@example.com"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("label", { staticClass: "block mb-4" }, [
-            _c("span", { staticClass: "block my-2 text-sm font-700" }, [
-              _vm._v(
-                "\n        " +
-                  _vm._s(_vm.messages[_vm.language].subject) +
-                  ":\n      "
-              )
-            ]),
-            _vm._v(" "),
-            _c("input", {
-              staticClass:
-                "block w-full px-3 py-1 rounded bg-gray-200 leading-normal text-black",
-              attrs: { type: "text", name: "_subject" },
-              domProps: {
-                value: _vm.messages[_vm.language].subject_placeholder
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("span", { staticClass: "block my-2 text-sm font-700" }, [
-            _vm._v(
-              "\n      " +
-                _vm._s(_vm.messages[_vm.language].message) +
-                ":\n    "
-            )
-          ]),
-          _vm._v(" "),
-          _c("textarea", {
-            staticClass: "h-24 w-full px-3 py-3 rounded bg-gray-200 mb-4",
-            attrs: {
-              name: "message",
-              placeholder: _vm.messages[_vm.language].message_placeholder
-            }
-          }),
-          _vm._v(" "),
           _c(
-            "button",
-            {
-              staticClass:
-                "btn hover:btn-lift flex items-center w-full mb-4 bg-primary text-primary-100 transition",
-              attrs: { type: "submit" }
-            },
+            "div",
+            { staticClass: "flex items-center justify-center mb-8 px-8" },
             [
-              _c(
-                "svg",
-                {
-                  staticClass: "inline-block h-4 w-4 mr-2 stroke-current",
-                  attrs: {
-                    xmlns: "http://www.w3.org/2000/svg",
-                    viewBox: "0 0 24 24",
-                    fill: "none",
-                    "stroke-width": "2",
-                    "stroke-linecap": "round",
-                    "stroke-linejoin": "round"
-                  }
-                },
-                [
-                  _c("path", {
-                    attrs: {
-                      d:
-                        "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("polyline", { attrs: { points: "22,6 12,13 2,6" } })
-                ]
-              ),
-              _vm._v(
-                "\n      " +
-                  _vm._s(_vm.messages[_vm.language].submit_form) +
-                  "\n    "
-              )
+              _c("div", { staticClass: "text-center" }, [
+                _c("h2", { staticClass: "mb-2 font-600 text-2xl" }, [
+                  _vm._v(_vm._s(_vm.messages[_vm.language].title))
+                ]),
+                _vm._v(" "),
+                _c("h3", { staticClass: "font-400" }, [
+                  _vm._v(_vm._s(_vm.messages[_vm.language].subtitle))
+                ])
+              ])
             ]
           ),
           _vm._v(" "),
-          _c("div", { staticClass: "flex items-center mb-4" }, [
-            _c("span", { staticClass: "inline-block" }, [
-              _vm._v(_vm._s(_vm.messages[_vm.language].or))
-            ]),
-            _vm._v(" "),
-            _c(
-              "a",
-              {
-                staticClass:
-                  "btn hover:btn-lift flex items-center ml-3 flex-1 bg-primary text-primary-100 font-bold tracking-loose transition",
-                attrs: { href: "#", target: "_blank", rel: "noopener" }
-              },
-              [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "inline-block h-4 w-4 mr-2 stroke-current",
-                    attrs: {
-                      xmlns: "http://www.w3.org/2000/svg",
-                      viewBox: "0 0 24 24",
-                      fill: "none",
-                      "stroke-width": "2",
-                      "stroke-linecap": "round",
-                      "stroke-linejoin": "round"
-                    }
-                  },
-                  [
-                    _c("path", {
-                      attrs: {
-                        d:
-                          "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                      }
-                    })
-                  ]
-                ),
-                _vm._v(
-                  "\n        " +
-                    _vm._s(_vm.messages[_vm.language].call) +
-                    "\n      "
-                )
-              ]
-            )
-          ]),
+          _c("portal", { attrs: { to: "contact-modal-info" } }),
           _vm._v(" "),
-          _c("div", { staticClass: "text-sm text-gray-500" }, [
-            _c(
-              "p",
-              {},
-              [
-                _vm._v(
-                  "\n        " +
-                    _vm._s(_vm.messages[_vm.language].not_sure) +
-                    "\n        "
-                ),
-                _c("secondary-call-to-action", {
+          _c(
+            "form",
+            {
+              staticClass: "flex-1 mb-4 sm:mb-8 px-8",
+              attrs: {
+                action:
+                  "https://formspree.io/prostairs.finishcarpentry@gmail.com",
+                method: "POST"
+              }
+            },
+            [
+              _c("label", { staticClass: "block mb-4" }, [
+                _c("span", { staticClass: "block my-2 text-sm font-700" }, [
+                  _vm._v(
+                    "\n          " +
+                      _vm._s(_vm.messages[_vm.language].email) +
+                      ":\n        "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("input", {
                   staticClass:
-                    "text-primary no-underline hover:underline transition",
+                    "block w-full px-3 py-1 rounded bg-gray-200 leading-normal text-black",
                   attrs: {
-                    language: _vm.language,
-                    "first-letter-is-upper-case": false,
-                    "messages-replacement": {
-                      en: {
-                        call_to_action: _vm.messages.en.alternate_action
-                      },
-                      es: {
-                        call_to_action: _vm.messages.es.alternate_action
-                      },
-                      pt: {
-                        call_to_action: _vm.messages.pt.alternate_action
-                      }
-                    },
-                    "show-icon-before-message": false,
-                    "show-icon-after-message": false
+                    type: "email",
+                    name: "email",
+                    placeholder: "email@example.com"
                   }
                 })
-              ],
-              1
-            )
-          ])
-        ]
+              ]),
+              _vm._v(" "),
+              _c("label", { staticClass: "block mb-4" }, [
+                _c("span", { staticClass: "block my-2 text-sm font-700" }, [
+                  _vm._v(
+                    "\n          " +
+                      _vm._s(_vm.messages[_vm.language].subject) +
+                      ":\n        "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass:
+                    "block w-full px-3 py-1 rounded bg-gray-200 leading-normal text-black",
+                  attrs: { type: "text", name: "_subject" },
+                  domProps: {
+                    value: _vm.messages[_vm.language].subject_placeholder
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "block my-2 text-sm font-700" }, [
+                _vm._v(
+                  "\n        " +
+                    _vm._s(_vm.messages[_vm.language].message) +
+                    ":\n      "
+                )
+              ]),
+              _vm._v(" "),
+              _c("textarea", {
+                staticClass: "h-24 w-full px-3 py-3 rounded bg-gray-200 mb-4",
+                attrs: {
+                  name: "message",
+                  placeholder: _vm.messages[_vm.language].message_placeholder
+                }
+              }),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass:
+                    "btn hover:btn-lift flex items-center w-full mb-4 bg-primary text-primary-100 transition",
+                  attrs: { type: "submit" }
+                },
+                [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "inline-block h-4 w-4 mr-2 stroke-current",
+                      attrs: {
+                        xmlns: "http://www.w3.org/2000/svg",
+                        viewBox: "0 0 24 24",
+                        fill: "none",
+                        "stroke-width": "2",
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round"
+                      }
+                    },
+                    [
+                      _c("path", {
+                        attrs: {
+                          d:
+                            "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("polyline", { attrs: { points: "22,6 12,13 2,6" } })
+                    ]
+                  ),
+                  _vm._v(
+                    "\n        " +
+                      _vm._s(_vm.messages[_vm.language].submit_form) +
+                      "\n      "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex items-center mb-4" }, [
+                _c("span", { staticClass: "inline-block" }, [
+                  _vm._v(_vm._s(_vm.messages[_vm.language].or))
+                ]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "btn hover:btn-lift flex items-center ml-3 flex-1 bg-primary text-primary-100 font-bold tracking-loose transition",
+                    attrs: { href: "#", target: "_blank", rel: "noopener" }
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "inline-block h-4 w-4 mr-2 stroke-current",
+                        attrs: {
+                          xmlns: "http://www.w3.org/2000/svg",
+                          viewBox: "0 0 24 24",
+                          fill: "none",
+                          "stroke-width": "2",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round"
+                        }
+                      },
+                      [
+                        _c("path", {
+                          attrs: {
+                            d:
+                              "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(
+                      "\n          " +
+                        _vm._s(_vm.messages[_vm.language].call) +
+                        "\n        "
+                    )
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "text-sm text-gray-500" }, [
+                _c(
+                  "p",
+                  {},
+                  [
+                    _vm._v(
+                      "\n          " +
+                        _vm._s(_vm.messages[_vm.language].not_sure) +
+                        "\n          "
+                    ),
+                    _c("secondary-call-to-action", {
+                      staticClass:
+                        "text-primary no-underline hover:underline transition",
+                      attrs: {
+                        language: _vm.language,
+                        "first-letter-is-upper-case": false,
+                        "messages-replacement": {
+                          en: {
+                            call_to_action: _vm.messages.en.alternate_action
+                          },
+                          es: {
+                            call_to_action: _vm.messages.es.alternate_action
+                          },
+                          pt: {
+                            call_to_action: _vm.messages.pt.alternate_action
+                          }
+                        },
+                        "show-icon-before-message": false,
+                        "show-icon-after-message": false
+                      }
+                    })
+                  ],
+                  1
+                )
+              ])
+            ]
+          )
+        ],
+        1
       ),
       _vm._v(" "),
       _c("div", { staticClass: "w-full flex items-center justify-center" }, [
@@ -8296,8 +8309,7 @@ var render = function() {
           ]
         )
       ])
-    ],
-    1
+    ]
   )
 }
 var staticRenderFns = []
