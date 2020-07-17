@@ -24,6 +24,6 @@ return [
     'landing_page_image' => 'https://res.cloudinary.com/duib7ae0a/image/upload/q_auto,f_auto,w_1500/prostairs/light-wood.jpg',
     'copyright_year' => '2018',
     'email' => 'prostairs.finishcarpentry@gmail.com',
-    'phone' => '1-978-327-8575',
+    'phone' => '1-978-328-4302',
     'instagram' => 'https://www.instagram.com/prostairs.finishcarpentry/',
 ];

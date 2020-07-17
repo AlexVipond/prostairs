@@ -7478,7 +7478,11 @@ var render = function() {
                   {
                     staticClass:
                       "btn hover:btn-lift flex items-center ml-3 flex-1 bg-primary text-primary-100 font-bold tracking-loose transition",
-                    attrs: { href: "#", target: "_blank", rel: "noopener" }
+                    attrs: {
+                      href: "tel:1-978-328-4302",
+                      target: "_blank",
+                      rel: "noopener"
+                    }
                   },
                   [
                     _c(

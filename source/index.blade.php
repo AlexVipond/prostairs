@@ -77,14 +77,14 @@
     </language-changer>
   </nav>
 
-  <header id="landing-page" class="flex items-center relative h-screen min-h-400 bg-center bg-no-repeat bg-fixed bg-cover" style="background-image: url({{ $page->landing_page_image }})">
+  <header id="landing-page" class="flex items-center relative h-screen bg-center bg-no-repeat bg-fixed bg-cover" style="background-image: url({{ $page->landing_page_image }}); min-height: 700px">
     <div class="absolute z-10 pin-t pin-l w-full h-full bg-true-black-40"></div>
 
     <div class="relative z-20 container mx-auto px-8 py-16">
       <value-proposition class="md:text-center" :language="language"></value-proposition>
 
-      <div class="inline-flex flex-col sm:flex-row  md:flex md:justify-center">
-        <button class="mb-6 sm:mb-0 sm:mr-6" type="button" name="button">
+      <div class="flex flex-col md:flex-row md:justify-center">
+        <button class="mb-6 mr-auto md:mb-0 md:mr-6" type="button" name="button">
           <primary-call-to-action
             class="btn md:btn-lg w-full hover:btn-grow bg-primary tracking-normal font-400 text-primary-100"
             :language="language"
@@ -95,14 +95,55 @@
         </button>
 
 
-        <button type="button" name="button">
+        <button class="mr-auto md:mr-0" type="button" name="button">
           <secondary-call-to-action
-            class="btn md:btn-lg w-full hover:btn-grow bg-white border-0 border-white text-primary"
+            class="btn md:btn-lg w-full hover:btn-grow bg-primary tracking-normal font-400 text-primary-100"
             :language="language"
             :first-letter-is-upper-case="true"
             :show-icon-before-message="true"
             :show-icon-after-message="false">
           </secondary-call-to-action>
+        </button>
+      </div>
+
+      <div class="mt-6 inline-flex flex-col md:flex md:justify-center">
+        <button class="mb-6 sm:mx-auto" type="button" name="button">
+          <a
+            class="btn w-full hover:btn-grow bg-white border-0 border-white text-primary"
+            href="tel:1-978-328-4302"
+          >
+            <svg
+              class="inline-block h-4 w-4 mr-2 stroke-current"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            +1 (978) 328-4302
+          </a>
+        </button>
+
+
+        <button class="sm:mx-auto" type="button" name="button">
+          <a
+            class="btn w-full hover:btn-grow bg-white border-0 border-white text-primary"
+            href="tel:1-978-761-4640"
+          >
+            <svg
+              class="inline-block h-4 w-4 mr-2 stroke-current"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            +1 (978) 761-4640
+          </a>
         </button>
       </div>
     </div>
