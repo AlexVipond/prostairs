@@ -7479,7 +7479,7 @@ var render = function() {
                     staticClass:
                       "btn hover:btn-lift flex items-center ml-3 flex-1 bg-primary text-primary-100 font-bold tracking-loose transition",
                     attrs: {
-                      href: "sms://1-978-328-4302",
+                      href: "sms://19783284302",
                       target: "_blank",
                       rel: "noopener"
                     }
