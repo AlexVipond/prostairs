@@ -110,7 +110,7 @@
         <button class="mb-6 sm:mx-auto" type="button" name="button">
           <a
             class="btn w-full hover:btn-grow bg-white border-0 border-white text-primary"
-            href="tel:1-978-328-4302"
+            href="sms://1-978-328-4302"
           >
             <svg
               class="inline-block h-4 w-4 mr-2 stroke-current"
@@ -130,7 +130,7 @@
         <button class="sm:mx-auto" type="button" name="button">
           <a
             class="btn w-full hover:btn-grow bg-white border-0 border-white text-primary"
-            href="tel:1-978-761-4640"
+            href="sms://1-978-761-4640"
           >
             <svg
               class="inline-block h-4 w-4 mr-2 stroke-current"
