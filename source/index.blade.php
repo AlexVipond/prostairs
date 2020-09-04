@@ -110,7 +110,7 @@
         <button class="mb-6 sm:mx-auto" type="button" name="button">
           <a
             class="btn w-full hover:btn-grow bg-white border-0 border-white text-primary"
-            href="tel:1-978-328-4302"
+            href="sms://19783284302"
           >
             <svg
               class="inline-block h-4 w-4 mr-2 stroke-current"
@@ -120,7 +120,7 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
             </svg>
             +1 (978) 328-4302
           </a>
@@ -130,7 +130,7 @@
         <button class="sm:mx-auto" type="button" name="button">
           <a
             class="btn w-full hover:btn-grow bg-white border-0 border-white text-primary"
-            href="tel:1-978-761-4640"
+            href="sms://19787614640"
           >
             <svg
               class="inline-block h-4 w-4 mr-2 stroke-current"
@@ -140,7 +140,7 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
             </svg>
             +1 (978) 761-4640
           </a>
